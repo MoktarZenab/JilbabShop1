@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961146223352",
+    "project_id": "jilbabshop",
+    "storage_bucket": "jilbabshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961146223352:android:43712c94364ecacd85190d",
+        "android_client_info": {
+          "package_name": "cm.zena.jilbabshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961146223352-9m06quu547nl5h3i3atrr82itb3snsn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK97X2FhPkG3huvV-GeEQ4oZ-1J9blVJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961146223352-9m06quu547nl5h3i3atrr82itb3snsn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
