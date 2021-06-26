@@ -5,15 +5,22 @@ import android.os.Build
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import cm.zena.jilbabshop.R
 
 class LoginActivity : AppCompatActivity() {
+
+    // get reference to the tv_register textview by it's ID
+   private lateinit var tv_register: TextView
+
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        tv_register = findViewById(R.id.tv_register)
 
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

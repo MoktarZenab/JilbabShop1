@@ -7,13 +7,20 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import cm.zena.jilbabshop.R
 
 class RegisterActivity : AppCompatActivity() {
+
+    // get reference to the tv_register textview by it's ID
+    private lateinit var toolbar_register_activity: Toolbar
+
     @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        toolbar_register_activity = findViewById(R.id.toolbar_register_activity)
 
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -27,16 +34,16 @@ class RegisterActivity : AppCompatActivity() {
 
         setupActionBar()
 
-        tv_login.setOnClickListener {
-
-            //Launch the register screen when the user click on the text.
-            val intent = Intent(this@RegisterActivity, RegisterActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        tv_login.setOnClickListener {
+//
+//            //Launch the register screen when the user click on the text.
+//            val intent = Intent(this@RegisterActivity, RegisterActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
     }
 
-    Private fun setupActionBar() {
+    private fun setupActionBar() {
 
         setSupportActionBar(toolbar_register_activity)
 
